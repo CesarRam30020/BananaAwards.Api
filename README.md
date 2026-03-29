@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Banana Awards API
 
 This is a brief description of the Banana Awards API project. It provides a RESTful API for the Banana Awards application, allowing users to manage awards, categories, nominees and votes.
 
