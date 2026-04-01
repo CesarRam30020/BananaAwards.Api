@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from api.serializers import UserRequest, UserSerializer
 from rest_framework import status
-from api.services import get, create, update, delete
+from api.serializers import UserRequest, UserSerializer
+from api.services.UsersServices import get, create, update, delete
 
 class UsersController(ViewSet):
     def list(self, request):

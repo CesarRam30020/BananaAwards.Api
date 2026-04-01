@@ -1,32 +1,32 @@
-from api.models import User
+from api.models import Edition
 
 def get(pk=None):
     if pk is not None:
         try:
-            return User.objects.get(pk=pk)
-        except User.DoesNotExist:
+            return Edition.objects.get(pk=pk)
+        except Edition.DoesNotExist:
             return None
-    
-    return User.objects.all()
+
+    return Edition.objects.all()
 
 def create(data):
-    object = User.objects.create(**data)
+    object = Edition.objects.create(**data)
     return object
 
 def update(pk, data):
     try:
-        object = User.objects.get(pk=pk)
+        object = Edition.objects.get(pk=pk)
         for attr, value in data.items():
             setattr(object, attr, value)
         object.save()
         return object
-    except User.DoesNotExist:
+    except Edition.DoesNotExist:
         return None
 
 def delete(pk):
     try:
-        object = User.objects.get(pk=pk)
+        object = Edition.objects.get(pk=pk)
         object.delete()
         return object
-    except User.DoesNotExist:
+    except Edition.DoesNotExist:
         return None
