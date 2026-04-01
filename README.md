@@ -2,7 +2,7 @@
 
 This is a brief description of the Banana Awards API project. It provides a RESTful API for the Banana Awards application, allowing users to manage awards, categories, nominees and votes.
 
-Thid project only exists as a learing experience for me, and as a "professionalization" of a monthly get-together I have with some friends, where we share funny stories and anecdotes that happened to us during the month, and then we vote for the best one, which wins a banana trophy and a "crown". 
+Thid project only exists as a learing experience for me, and as a "professionalization" of a monthly get-together I have with some friends, where we share funny stories and anecdotes that happened to us during the month, and then we vote for the best one, which wins a banana trophy and a banana "crown". 
 
 ---
 
@@ -11,7 +11,7 @@ Thid project only exists as a learing experience for me, and as a "professionali
 - Python 3.x
 - Django
 - Django REST Framework
-- PostgreSQL / SQLite
+- SQLite
 
 ---
 
